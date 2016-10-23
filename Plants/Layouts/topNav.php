@@ -30,16 +30,16 @@ echo
                         <li>
                             <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Tools <span class='caret'></span></a>
                             <ul class='dropdown-menu'>
-                                <li><a href='#'>Plant Search</a></li>
-                                <li><a href='#'>Plants By State</a></li>
+                                <li><a href='../Tools/plantSearch.php'>Plant Search</a></li>
+                                <li><a href='../Tools/plantByState.php'>Plants By State</a></li>
                                 <li role='separator' class='divider'></li>
                                 <li class='dropdown-header'>Reference Info</li>
-                                <li><a href='http://plants.usda.gov/documents.html'>Documentation</a></li>
-                                <li><a href='http://plants.usda.gov/java/factSheet?cultural=yes'>Cultural Plants</a></li>
-                                <li><a href='http://plants.usda.gov/hardiness.html'>Hardiness Zones</a></li>
+                                <li><a href='../Tools/documentation.php'>Documentation</a></li>
+                                <li><a href='../Tools/culturalPlants.php'>Cultural Plants</a></li>
+                                <li><a href='../Tools/hardinessZones.php'>Hardiness Zones</a></li>
                                 <li role='separator' class='divider'></li>
                                 <li class='dropdown-header'>External Info</li>
-                                <li><a href='https://esis.sc.egov.usda.gov/'>Ecological Sites</a></li>
+                                <li><a href='../Tools/ecologicalSites.php'>Ecological Sites</a></li>
                             </ul>
                         </li>
                         <!-- About -->
