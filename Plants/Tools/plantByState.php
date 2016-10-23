@@ -12,18 +12,18 @@
 
     <!-- Styles -->
     <link href="../Content/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
-    <link href="../Content/Styles/main.css" rel="stylesheet">
+    <link href="../Content/styles/main.css" rel="stylesheet">
 
 </head>
     <body>
-        <?php include('topNav.php') ?>
+        <?php include('../Layouts/topNav.php') ?>
 
 
         <!-- ============================== -->
         <!-- == Content Section          == -->
         <!-- ============================== -->
 
-        <?php include('contentStart.php')?>
+        <?php include('../Layouts/contentStart.php')?>
 
 
         <!-- Our Content Goes Here -->
@@ -31,7 +31,7 @@
         <p>This will contain a tool that works with the DB to pull in</p>
 
 
-        <?php include('contentEnd.php')?>
+        <?php include('../Layouts/contentEnd.php')?>
 
 
 

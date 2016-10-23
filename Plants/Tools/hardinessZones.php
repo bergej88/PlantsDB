@@ -12,27 +12,27 @@
 
     <!-- Styles -->
     <link href="../Content/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
-    <link href="../Content/Styles/main.css" rel="stylesheet">
+    <link href="../Content/styles/main.css" rel="stylesheet">
 
 </head>
     <body>
-        <?php include('topNav.php') ?>
+        <?php include('../Layouts/topNav.php') ?>
 
 
         <!-- ============================== -->
         <!-- == Content Section          == -->
         <!-- ============================== -->
 
-        <?php include('contentStart.php')?>
+        <?php include('../Layouts/contentStart.php')?>
 
 
         <!-- Our Content Goes Here -->
         <h1 class="page-header">Hardiness Zones</h1>
         <p>this will pull in contend from the hardiness section of the usda site</p>
-        <iframe src="http://plants.usda.gov/hardiness.html"></iframe>
+        <iframe src="http://plants.usda.gov/hardiness.html" style="width: 100%; height: 600px;"></iframe>
 
 
-        <?php include('contentEnd.php')?>
+        <?php include('../Layouts/contentEnd.php')?>
 
 
 

@@ -12,28 +12,28 @@
 
     <!-- Styles -->
     <link href="../Content/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
-    <link href="../Content/Styles/main.css" rel="stylesheet">
+    <link href="../Content/styles/main.css" rel="stylesheet">
 
 </head>
     <body>
-        <?php include('topNav.php') ?>
+        <?php include('../Layouts/topNav.php') ?>
 
 
         <!-- ============================== -->
         <!-- == Content Section          == -->
         <!-- ============================== -->
 
-        <?php include('contentStart.php')?>
+        <?php include('../Layouts/contentStart.php')?>
 
 
         <!-- Our Content Goes Here -->
         <h1 class="page-header">Ecological Sites</h1>
         <p>this will be a landing page that either points to or pulls in info from the esis.sc.egov.usda.gov site</p>
-        <iframe src="https://esis.sc.egov.usda.gov/"></iframe>
+        <iframe src="https://esis.sc.egov.usda.gov/"  style="width: 100%; height: 600px;"></iframe>
 
 
 
-        <?php include('contentEnd.php')?>
+        <?php include('../Layouts/contentEnd.php')?>
 
 
 

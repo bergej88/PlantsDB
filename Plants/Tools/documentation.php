@@ -12,25 +12,25 @@
 
     <!-- Styles -->
     <link href="../Content/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
-    <link href="../Content/Styles/main.css" rel="stylesheet">
+    <link href="../Content/styles/main.css" rel="stylesheet">
 
 </head>
     <body>
-        <?php include('topNav.php') ?>
+        <?php include('../Layouts/topNav.php') ?>
 
 
         <!-- ============================== -->
         <!-- == Content Section          == -->
         <!-- ============================== -->
 
-        <?php include('contentStart.php')?>
+        <?php include('../Layouts/contentStart.php')?>
 
         <h1 class="page-header">Documentation</h1>
         <p>this will pull in content from the documents section of the usda site</p>
-        <iframe src="http://plants.usda.gov/documents.html"></iframe>
+        <iframe src="http://plants.usda.gov/documents.html"  style="width: 100%; height: 600px;"></iframe>
 
 
-        <?php include('contentEnd.php')?>
+        <?php include('../Layouts/contentEnd.php')?>
 
 
 
