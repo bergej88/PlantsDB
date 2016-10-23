@@ -820,8 +820,8 @@ $.position = {
 		}
 		var w1, w2,
 			div = $( "<div " +
-				"style='display:block;position:absolute;width:50px;height:50px;overflow:hidden;'>" +
-				"<div style='height:100px;width:auto;'></div></div>" ),
+				"styles='display:block;position:absolute;width:50px;height:50px;overflow:hidden;'>" +
+				"<div styles='height:100px;width:auto;'></div></div>" ),
 			innerDiv = div.children()[ 0 ];
 
 		$( "body" ).append( div );
@@ -3822,7 +3822,7 @@ $.widget( "ui.resizable", $.ui.mouse, {
 		if ( this.element[ 0 ].nodeName.match( /^(canvas|textarea|input|select|button|img)$/i ) ) {
 
 			this.element.wrap(
-				$( "<div class='ui-wrapper' style='overflow: hidden;'></div>" ).css( {
+				$( "<div class='ui-wrapper' styles='overflow: hidden;'></div>" ).css( {
 					position: this.element.css( "position" ),
 					width: this.element.outerWidth(),
 					height: this.element.outerHeight(),
@@ -4418,7 +4418,7 @@ $.widget( "ui.resizable", $.ui.mouse, {
 
 		if ( this._helper ) {
 
-			this.helper = this.helper || $( "<div style='overflow:hidden;'></div>" );
+			this.helper = this.helper || $( "<div styles='overflow:hidden;'></div>" );
 
 			this._addClass( this.helper, this._helper );
 			this.helper.css( {
@@ -5456,7 +5456,7 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 			body.css( "cursor", o.cursor );
 
 			this.storedStylesheet =
-				$( "<style>*{ cursor: " + o.cursor + " !important; }</style>" ).appendTo( body );
+				$( "<styles>*{ cursor: " + o.cursor + " !important; }</styles>" ).appendTo( body );
 		}
 
 		if ( o.opacity ) { // opacity option
@@ -9612,7 +9612,7 @@ function datepicker_getZindex( elem ) {
 			// IE returns 0 when zIndex is not specified
 			// other browsers return a string
 			// we ignore the case of nested elements with an explicit value of 0
-			// <div style="z-index: -10;"><div style="z-index: 0;"></div></div>
+			// <div styles="z-index: -10;"><div styles="z-index: 0;"></div></div>
 			value = parseInt( elem.css( "zIndex" ), 10 );
 			if ( !isNaN( value ) && value !== 0 ) {
 				return value;
@@ -9907,7 +9907,7 @@ $.extend( Datepicker.prototype, {
 			this.uuid += 1;
 			id = "dp" + this.uuid;
 			this._dialogInput = $( "<input type='text' id='" + id +
-				"' style='position: absolute; top: -100px; width: 0px;'/>" );
+				"' styles='position: absolute; top: -100px; width: 0px;'/>" );
 			this._dialogInput.on( "keydown", this._doKeyDown );
 			$( "body" ).append( this._dialogInput );
 			inst = this._dialogInst = this._newInst( this._dialogInput, false );
@@ -13357,7 +13357,7 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 	_resizeButton: function() {
 		var width = this.options.width;
 
-		// For `width: false`, just remove inline style and stop
+		// For `width: false`, just remove inline styles and stop
 		if ( width === false ) {
 			this.button.css( "width", "" );
 			return;
@@ -16147,7 +16147,7 @@ var widgetsTooltip = $.ui.tooltip;
 
 
 var dataSpace = "ui-effects-",
-	dataSpaceStyle = "ui-effects-style",
+	dataSpaceStyle = "ui-effects-styles",
 	dataSpaceAnimated = "ui-effects-animated",
 
 	// Create a local jQuery because jQuery Color relies on it and the
@@ -18423,7 +18423,7 @@ var effectsEffectSize = $.effects.define( "size", function( options, done ) {
 					.css( "position", position === "static" ? "relative" : position )
 					.offset( offset );
 
-				// Need to save style here so that automatic style restoration
+				// Need to save styles here so that automatic styles restoration
 				// doesn't restore to the original styles from before the animation.
 				$.effects.saveStyle( element );
 			}
