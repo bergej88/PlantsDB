@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link href="../Content/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
-    <link href="../Content/styles/main.css" rel="stylesheet">
+    <link href="../Content/Styles/main.css" rel="stylesheet">
 
 </head>
     <body>
