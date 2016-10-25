@@ -120,7 +120,7 @@
 
 
 
-<?php include('Layouts/contentEnd.php')?>
+<?php include('Layouts/contentEndIndex.php')?>
 
 
 
