@@ -39,6 +39,8 @@ if (login_check($mysqli) == true) {
 
     <?php include('Layouts/contentStart.php')?>
 
+    <h1 class="page-header">Login</h1>
+
     <?php
     if (isset($_GET['error'])) {
         echo '<p class="error">Error Logging In!</p>';
@@ -65,7 +67,7 @@ if (login_check($mysqli) == true) {
                     }
     ?>
 
-    <?php include('Layouts/contentEnd.php')?>
+    <?php include('Layouts/contentEndIndex.php')?>
     <!-- ============================== -->
     <!-- == Script Section           == -->
     <!-- ============================== -->
